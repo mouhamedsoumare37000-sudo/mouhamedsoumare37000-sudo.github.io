@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio BTS SIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF1F4; --ink:#12202B; --muted:#52606C; --line:#C9D1D9; --accent:#2B4EFF; --on-accent:#fff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1820;--ink:#E8EDF2;--muted:#9AA8B5;--line:#2A3946;--accent:#7C93FF;--on-accent:#0E1820}
+}
+:root[data-theme="dark"]{--bg:#0E1820;--ink:#E8EDF2;--muted:#9AA8B5;--line:#2A3946;--accent:#7C93FF;--on-accent:#0E1820}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.55 "DM Sans",system-ui,sans-serif}
+.page{max-width:1160px;margin:0 auto;padding:clamp(1.5rem,5vw,4rem) clamp(1.25rem,5vw,3rem);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,6vw,5rem);min-height:100vh}
+.id{align-self:start;position:sticky;top:clamp(1.5rem,5vw,4rem)}
+.id h1{font:700 clamp(2.6rem,6vw,4.4rem)/.95 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:0 0 1.25rem}
+.role{font-weight:500;margin:0 0 .5rem}
+.id p{color:var(--muted);max-width:34ch;margin:0 0 1.75rem}
+.cv{display:inline-block;padding:.8rem 1.3rem;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500;border-radius:999px;transition:background .2s,color .2s}
+.cv:hover,.cv:focus-visible{background:var(--ink);color:var(--bg)}
+nav ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+nav li{border-bottom:1px solid var(--line)}
+nav a{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:1rem;padding:1.15rem .25rem;color:var(--ink);text-decoration:none;transition:background .2s,color .2s,padding .2s}
+nav a b{font:700 clamp(1.5rem,3.2vw,2.1rem)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+nav a span{grid-column:1;color:var(--muted);font-size:.95rem;transition:color .2s}
+nav a i{grid-row:1/3;grid-column:2;font-style:normal;font-size:1.4rem;align-self:center;transition:transform .2s}
+nav a:hover,nav a:focus-visible{background:var(--accent);color:var(--on-accent);padding-left:1rem;padding-right:1rem;outline:none}
+nav a:hover span,nav a:focus-visible span{color:var(--on-accent)}
+nav a:hover i,nav a:focus-visible i{transform:translateX(4px)}
+nav a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+footer{grid-column:1/-1;color:var(--muted);font-size:.85rem;align-self:end}
+@media (max-width:760px){
+  .page{grid-template-columns:1fr}
+  .id{position:static}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="id">
+    <p class="role">Étudiant en BTS SIO, option SISR</p>
+    <h1>Mouhamed<br>SOUMARE</h1>
+    <p>Une phrase pour dire ce qui t'attire en informatique et ce que tu cherches après le BTS.</p>
+    <a class="cv" href="#cv">Télécharger mon CV</a>
+  </header>
+
+  <nav aria-label="Sections du portfolio">
+    <ul>
+      <li><a href="#parcours"><b>Parcours</b><i aria-hidden="true">→</i><span>Stages, expériences et études</span></a></li>
+      <li><a href="#patrimoine"><b>Patrimoine</b><i aria-hidden="true">→</i><span>Le parc informatique que j'ai géré</span></a></li>
+      <li><a href="#certification"><b>Certification</b><i aria-hidden="true">→</i><span>Diplômes et attestations obtenus</span></a></li>
+      <li><a href="#formation"><b>Formation</b><i aria-hidden="true">→</i><span>Le BTS SIO et ce qu'il m'a appris</span></a></li>
+      <li><a href="#veille"><b>Veille</b><i aria-hidden="true">→</i><span>Les sujets que je suis et mes sources</span></a></li>
+      <li><a href="#competences"><b>Compétences</b><i aria-hidden="true">→</i><span>Ce que je sais faire, preuves à l'appui</span></a></li>
+      <li><a href="#contact"><b>Contact</b><i aria-hidden="true">→</i><span>Me joindre, trouver mon profil</span></a></li>
+    </ul>
+  </nav>
+
+  <footer>Portfolio BTS SIO, session 2026</footer>
+</main>
+</body>
+</html>
